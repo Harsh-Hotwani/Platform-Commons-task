@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         apiRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         favRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        // Set up Adapters
         apiAdapter = new ApiUserAdapter(new ArrayList<>(), this, user -> {
             viewModel.addToFavorites(user);
         });
@@ -71,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         apiRecyclerView.setAdapter(apiAdapter);
         favRecyclerView.setAdapter(favAdapter);
 
-        // Observe LiveData
         viewModel.getApiUsers().observe(this, users -> {
             if (users != null) {
                 apiAdapter.updateData(users);

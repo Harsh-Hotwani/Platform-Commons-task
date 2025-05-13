@@ -4,7 +4,7 @@
     android:padding="12dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#333"
+    android:background="#700000"
     android:layout_margin="8dp">
 
     <ImageView
@@ -42,10 +42,4 @@
         android:layout_height="wrap_content"
         android:text="Favorite" />
 
-    <Button
-        android:id="@+id/unfavoriteBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Unfavorite"
-        android:visibility="gone" />
 </LinearLayout>
