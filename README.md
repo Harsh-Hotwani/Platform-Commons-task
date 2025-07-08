@@ -22,8 +22,8 @@ This is a simple Android application that fetches user data from a remote API an
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/user-data-local-storage-app.git
-
+   git clone https://github.com/Harsh-Hotwani/Platform-Commons-task.git
+   
 2. Open in Android Studio
 
 3. Update dependencies (if needed)
