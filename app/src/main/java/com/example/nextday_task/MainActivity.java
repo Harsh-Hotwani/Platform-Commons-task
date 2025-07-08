@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }).get(MainViewModel.class);
 
+
+
         viewModel.fetchApiUsers();
 
         apiRecyclerView = findViewById(R.id.apiRecyclerView);

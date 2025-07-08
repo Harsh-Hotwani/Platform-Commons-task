@@ -44,7 +44,7 @@ public class ApiUserAdapter extends RecyclerView.Adapter<ApiUserAdapter.ViewHold
         ApiUser user = userList.get(position);
         holder.email.setText(user.getId() + " " + user.getEmail());
         holder.name.setText(user.getFirst_name() + " " + user.getLast_name());
-        Glide.with(context).load(user.getAvatar()).into(holder.avatar);
+        Glide.with(context).load(user.getAvatar()).placeholder(R.drawable.ic_user_placeholder).into(holder.avatar);
 
         holder.favoriteBtn.setOnClickListener(v -> listener.onFavorite(user));
     }
